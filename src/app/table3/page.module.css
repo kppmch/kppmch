@@ -1,0 +1,125 @@
+.tablekppmch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  overflow-x: auto; /* Keep this for horizontal scrolling of the whole page if needed */
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 0.5rem;
+}
+
+.table {
+  width: 61%; /* Changed to 100% for full width */
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border: 1px solid black;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  display: block; /* Make the table a block element */
+}
+
+.table th {
+  text-align: center;
+  
+}
+
+.table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  
+  white-space: nowrap; /* Keep this to prevent text wrapping and force horizontal scroll */
+}
+
+.table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) { /* Corrected typo */
+  background-color: #f9f9f9;
+}
+
+.tableTitle {
+  text-align: center;
+}
+
+.monday {
+  background-color: #FFFF99;
+}
+
+.tuesday {
+  background-color: #FF99CC;
+}
+
+.wednesday {
+  background-color: #99FF99;
+}
+
+.thursday {
+  background-color: #FF9966; /* Light Blue */
+}
+
+.friday {
+  background-color: #CCCCFF; /* Light Green */
+}
+.saturday{
+  background-color: #CC33FF;
+}
+.sunday{
+  background-color: #FF0033;
+  color: #f9f9f9;
+}
+.listul {
+  text-align: left;
+  color: black;
+  margin-top: 30px;
+}
+
+.titelqrcode {
+  text-align: center;
+  margin-top: 25px;
+  color: blue;
+  margin-bottom: 10px;
+}
+.alertTitle{
+  color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .tablekppmch {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .aboutTitle {
+    font-size: 1.8rem; /* Reduce font size on smaller screens */
+  }
+
+  .aboutText {
+    font-size: 1rem; /* Reduce font size on smaller screens */
+  }
+
+  .table td {
+    padding: 4px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .table th,
+  .table td {
+    font-size: 0.8rem; /* Further reduce font size on very small screens */
+  }
+}
